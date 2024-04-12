@@ -1,0 +1,33 @@
+<div class="container mt-3">
+  <h1>Lista de vehiculos disponibles</h1>
+   
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Año</th>
+          <th>Propietarios anteriores</th>
+          <th>Detalles</th>
+
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let auto of autos">
+          <td>{{auto.id}}</td>
+          <td>{{auto.modelo}}</td>
+          <td>{{auto.marca}}</td>
+          <td>{{auto.anio}}</td>
+          <td>{{auto.propietarios}}</td>
+          <td style="display: flex; flex-direction: column;">
+            <button [routerLink]="['/auto',auto.id]" class="btn btn-primary">Detalles</button>
+            <button style="margin-top: 15px;" (click)="borrarAuto(auto.id)" class="btn btn-warning">Borrar</button>
+          </td>
+        </tr>
+     
+      </tbody>
+    </table>
+  </div>
+  

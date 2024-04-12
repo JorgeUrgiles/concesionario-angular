@@ -1,0 +1,25 @@
+{
+  "autos": [
+    {
+      "id": "1",
+      "modelo": "M4",
+      "marca": "bmw",
+      "anio": "2022",
+      "propietarios": "Sebastian Calle"
+    },
+    {
+      "id": "2",
+      "modelo": "150 XL",
+      "marca": "ford",
+      "anio": "2009",
+      "propietarios": "Sebastian Calle"
+    },
+    {
+      "id": "3",
+      "modelo": "M4",
+      "marca": "bmw",
+      "anio": "2024",
+      "propietarios": "Jorge Urgiles"
+    }
+  ]
+}

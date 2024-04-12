@@ -1,0 +1,33 @@
+<div class="container">
+    <form (ngSubmit)="editarPersona(formulario)"  #formulario="ngForm">
+        <label>ID:</label>
+        <input type="text" name="id" [(ngModel)]="id"
+         class="form-control">
+         <br>
+         <label>Modelo:</label>
+         <input type="text" name="modelo" [(ngModel)]="modelo"
+          class="form-control">
+          <br>
+          <label>Marca:</label>
+          <select name="marca" class="form-control" [(ngModel)]="marca">
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedesBenz">Mercedes Benz</option>
+            <option value="ford">Ford</option>
+        
+        </select>
+          
+           <br>
+           <label>Año de fabricacion:</label>
+           <input type="text" name="anio" [(ngModel)]="anio"
+            class="form-control">
+            <br>
+            <label>Propietarios:</label>
+            <input type="text" name="propietarios" [(ngModel)]="propietarios"
+             class="form-control">
+             <br>
+             <button class="btn btn-primary" type="submit">Editar</button>
+
+    </form>
+
+</div>
